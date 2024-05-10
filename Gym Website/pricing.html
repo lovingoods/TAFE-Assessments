@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <title>ML Strength</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="header"></div>
+    <!-- Home -->
+    <section id="home">
+      <h2>Our Pricing</h2>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing">
+      <h1>Our Competive Price</h1>
+      <p>
+        We pride ourselves on being a refreshing change from that. Our 'no
+        obligation, no pressure' attitude is clearly evident with our
+        <br />$10 CASUAL visit rate.
+      </p>
+      <div class="price-base">
+        <div class="price-box">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>Strength</h3>
+          <p><i class="fas fa-check"></i> Personal training</p>
+          <p><i class="fas fa-check"></i> Cardio exercise</p>
+          <p><i class="fas fa-check"></i> Weight losing</p>
+          <p><i class="fas fa-check"></i> body building</p>
+        </div>
+        <div class="price-box">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Functional</h3>
+          <p><i class="fas fa-check"></i> Boxing Lessons</p>
+          <p><i class="fas fa-check"></i> Nutrition & Diet plans</p>
+          <p><i class="fas fa-check"></i> Karate Training</p>
+        </div>
+      </div>
+    </section>
+    <!-- Registration -->
+    <section id="registration">
+      <div class="reminder">
+        <p>Wants A Free Trail?</p>
+        <h1>Regiser To Get It</h1>
+      </div>
+      <div class="form">
+        <h3>Join Free Trail Now</h3>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email Address" />
+        <input type="text" placeholder="Phone NUmber" />
+        <div class="btn">
+          <a class="btn-register" href="#">Submit Form</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>

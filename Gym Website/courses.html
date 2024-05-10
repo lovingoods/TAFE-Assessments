@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <title>ML Strength</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="header"></div>
+    <!-- Home -->
+    <section id="home">
+      <h2>Our Courses</h2>
+      <p>
+        <i class="fas fa-check"></i> Body attack/Body pump/Body step/Body
+        balance/Body combat
+      </p>
+      <p><i class="fas fa-check"></i> Zumba/World dance & dance</p>
+      <p><i class="fas fa-check"></i> Cycle/Cycle extreme</p>
+      <p><i class="fas fa-check"></i> Pilates/Yoga</p>
+      <p><i class="fas fa-check"></i> Step moves, step basic & burner</p>
+      <p><i class="fas fa-check"></i> Aqua fit & aqua mode</p>
+      <p><i class="fas fa-check"></i> Boxing & TAE box</p>
+      <p><i class="fas fa-check"></i> Rejuvenate, low impact fitness</p>
+      <p><i class="fas fa-check"></i> Hilo & fat burner/Abs blast</p>
+      <p><i class="fas fa-check"></i> Tai chi/Chi ball</p>
+      <p><i class="fas fa-check"></i> Sculpt & combo/ABT/ Power hour</p>
+
+      <div class="btn">
+        <a class="left" href="#">Read More</a>
+        <a class="right" href="#">Book Now</a>
+      </div>
+    </section>
+    <!-- Course -->
+    <section id="course">
+      <h1>Our Course</h1>
+      <div class="course-box">
+        <div class="courses">
+          <img src="/image/Boxing1.jpg" alt="" />
+          <h6>Boxing</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/Gym9.jpg" alt="" />
+          <h6>Bootcamp</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/yoga-g8793f02ad_1920.jpg" alt="" />
+          <h6>Pilates</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/Yoga3.jpg" alt="" />
+          <h6>Yoga</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/facilities2.jpg" alt="" />
+          <h6>Personal Training</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/Yoga1.jpg" alt="" />
+          <h6>Body balance</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/karate.jpg" alt="" />
+          <h6>Karate</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/nutrition.jpg" alt="" />
+          <h6>Nutrition Instrution</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/circuit-training.jpg" alt="" />
+          <h6>Circuit training</h6>
+        </div>
+      </div>
+      <div class="btn">
+        <a class="btn-course" href="#">Book Now</a>
+      </div>
+    </section>
+    <!-- Registration -->
+    <section id="registration">
+      <div class="reminder">
+        <p>Wants A Free Trail?</p>
+        <h1>Regiser To Get It</h1>
+      </div>
+      <div class="form">
+        <h3>Join Free Trail Now</h3>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email Address" />
+        <input type="text" placeholder="Phone NUmber" />
+        <div class="btn">
+          <a class="btn-register" href="#">Submit Form</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>

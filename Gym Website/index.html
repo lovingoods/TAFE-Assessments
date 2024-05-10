@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <title>ML Strength</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div id="header"></div>
+    <!-- Home -->
+    <section id="home">
+      <h1>ML Strength</h1>
+      <h2>We train like an athlete</h2>
+      <p>
+        When we speak of training we are talking about speed, strength, power,
+        and sports therapy.
+      </p>
+      <div class="btn">
+        <a class="left" href="#">Learn More</a>
+        <a class="right" href="#">Visit Our Service</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h1>Why ML Strength?</h1>
+      <p>
+        Get Fitter, Faster with ML Strength! We offer 24/7 access, the best in
+        strength and cardio equipment, functional and personal training, & more.
+      </p>
+      <div class="fea-base">
+        <div class="fea-box">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>Strength</h3>
+          <p>
+            Stay stronger and fitter with the varied strength training options
+            at ML Strength and improve your overall health.
+          </p>
+        </div>
+        <div class="fea-box">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Functional</h3>
+          <p>
+            No matter where you are in your fitness journey, our functional
+            training zones can help you get to the next level.
+          </p>
+        </div>
+        <div class="fea-box">
+          <i class="fa-solid fa-person-running"></i>
+          <h3>Cardio</h3>
+          <p>
+            Run, row, or ride! We have high quality cardio machines so you can
+            get the most out of your workout.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Course -->
+    <section id="course">
+      <h1>Our Popular Course</h1>
+      <div class="course-box">
+        <div class="courses">
+          <img src="/image/Boxing1.jpg" alt="" />
+          <h6>Boxing</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/Gym9.jpg" alt="" />
+          <h6>Bootcamp</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/yoga-g8793f02ad_1920.jpg" alt="" />
+          <h6>Pilates</h6>
+        </div>
+        <div class="courses">
+          <img src="/image/Yoga3.jpg" alt="" />
+          <h6>Yoga</h6>
+        </div>
+      </div>
+      <div class="btn">
+        <a class="btn-course" href="#">Find More Courses</a>
+      </div>
+    </section>
+    <!-- Registration -->
+    <section id="registration">
+      <div class="reminder">
+        <p>Wants A Free Trail?</p>
+        <h1>Regiser To Get It</h1>
+      </div>
+      <div class="form">
+        <h3>Join Free Trail Now</h3>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Email Address" />
+        <input type="text" placeholder="Phone NUmber" />
+        <div class="btn">
+          <a class="btn-register" href="#">Submit Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
